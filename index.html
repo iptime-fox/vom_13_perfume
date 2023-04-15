@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCT DJJ</title>
+
+  <!-- Favicon Link -->
+  <link rel="shortcut icon" href="img/logo.png">
+  <link rel="apple-touch-icon" href="img/logo.png">
+
+  <!-- Font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Remix Icon Link -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Swiper Slider Link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+  <!-- Swiper Slider Link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+  <!-- CSS link -->
+  <link rel="stylesheet" href="css/setting.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo-wrapper">
+        <ul class="logo">
+          <li class="logo-lists">
+            <a href="#"><img src="img/NCT_DOJAEJUNG_logo.png" alt="logo" class="logo-djj"></a>
+          </li>
+          <li class="logo-lists">
+            <a href="#"><img src="img/perfume_logo.png" alt="logo_perfume" class="logo-perfume"></a>
+          </li>
+        </ul>
+
+      </div>
+      <nav class="nav-wrapper">
+        <ul class="nav-lists">
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CART</a></li>
+          <li><a href="#">CHECKOUT</a></li>
+          <li><a href="#">COLUMNS</a></li>
+          <li><a href="#"><i class="ri-search-line"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- landing-section -->
+  <section class="section landing-section">
+    <div class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="slider-image">
+              <video loop autoplay muted><source src="img/dy.mp4"></video>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-image">
+              <video loop autoplay muted><source src="img/jh.mp4"></video>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider-image">
+              <video loop autoplay muted><source src="img/jw.mp4"></video>
+            </div>
+          </div>
+    
+        </div>
+        <!-- end of swiper wrapper -->
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev slider-btn"></div>
+      <div class="swiper-button-next slider-btn"></div>
+
+      
+    </div>
+  </section>
+
+
+
+  <!-- To top button -->
+  <div id="top" class="arrowBtn">
+    <button><i class="ri-arrow-up-s-line"></i></button>
+  </div>
+  <div id="bottom" class="arrowBtn">
+    <button><i class="ri-arrow-down-s-line"></i></button>
+  </div>
+
+  <!-- Script -->
+  <script src="js/header.js"></script>
+
+  <!-- Swiper Slider Link -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', { loop: true,
+   // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+  </script>
+</body>
+</html>

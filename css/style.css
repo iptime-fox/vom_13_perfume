@@ -1,0 +1,30 @@
+/* common style */
+.container, .section{width: 100%; height: auto;margin: auto; padding: 0 ; _max-width: 1400px;}
+
+/* header sytle */
+header{width: 100%; height: auto;position: fixed; z-index: 999; _background: black;}
+header .container{display: flex; justify-content: space-between; margin: auto;align-items: center;padding: 1.5rem;}
+header .logo{display: flex;justify-content: center;align-items: center;}
+header .logo .logo-djj{width: 60px;height: auto;}
+header .logo .logo-perfume{width: 150px; height: auto;}
+.nav-wrapper .nav-lists{display: flex;justify-content: space-between; margin: auto; align-items: center; cursor: pointer; }
+.nav-lists li{margin-left: 2rem;}
+.nav-lists a{color: #fff; font-size: 18px; font-weight: 600;}
+.nav-lists a:hover{color: orange;}
+
+/* landing-section style */
+.landing-section{width: 100%; height: auto;position: relative;}
+.landing-section video{width: 100%;}
+.swiper-button-next:after, .swiper-button-prev:after{color: #fff; font-size: 2rem;}
+
+
+@keyframes show-up{
+  0%{transform: translateY(40px); opacity: 0;}
+  100%{transform: translateY(0); opacity: 1;}
+}
+
+/* top btn */
+.arrowBtn{transition: all 0.4s;}
+.arrowBtn button{border: 2px solid #fff; background: none;  _border-radius: 50%; font-size: 20px; width: 35px;height: 35px; display: flex; align-items: center; justify-content: center; position: fixed; bottom: 40px; right: 40px;font-weight: 600; color: #fff; z-index: 10000; cursor: pointer;}
+.arrowBtn i{padding: .25rem;}
+#top button{bottom: 80px;}

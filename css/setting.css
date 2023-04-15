@@ -1,0 +1,15 @@
+/* Reset Style */
+html{scroll-behavior: smooth;}
+*{margin: 0; padding: 0; box-sizing: border-box; transition: all .3s;}
+body{font-family: 'Open Sans', sans-serif; background-color: black; font-size: 15px; height: 4000px; }
+
+
+ol, ul{list-style: none;}
+a{text-decoration: none; color: #444;}
+img{display: block; width: 100%; overflow: hidden;}
+em, strong, i, b{font-style: normal; font-weight: normal;}
+button, input, textarea{border: 1px solid #555; outline: 0; background: #fff; font-family: 'Open Sans', sans-serif;}
+
+/* Font */
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
