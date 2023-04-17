@@ -11,6 +11,7 @@ header .logo .logo-perfume{width: 150px; height: auto;}
 .nav-lists li{margin-left: 2rem;}
 .nav-lists a{color: #fff; font-size: 18px; font-weight: 600;}
 .nav-lists a:hover{color: orange;}
+.nav-lists li:nth-child(6){display: none;font-size: 20px;}
 
 /* landing-section style */
 .landing-section{width: 100%; height: auto;position: relative;}

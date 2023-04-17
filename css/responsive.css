@@ -6,6 +6,7 @@
 @media screen and (max-width : 980px) {
   .nav-lists li{display: none;}
   .nav-lists li:nth-child(6){display: block;}
+  .nav-lists li:nth-child(7){display: block; }
   header .logo .logo-djj{width: 50px;height: auto;}
   header .logo .logo-perfume{width: 135px; height: auto;}
   
