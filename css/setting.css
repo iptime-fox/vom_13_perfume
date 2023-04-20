@@ -1,7 +1,7 @@
 /* Reset Style */
 html{scroll-behavior: smooth;}
 *{margin: 0; padding: 0; box-sizing: border-box; transition: all .3s;}
-body{font-family: 'Roboto', sans-serif; background-color: black; font-size: 15px; height: 8000px; color: #fff;}
+body{font-family: 'Roboto', sans-serif; background-color: black; font-size: 15px; height: auto; color: #fff;}
 
 
 ol, ul{list-style: none;}
