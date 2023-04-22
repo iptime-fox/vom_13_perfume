@@ -48,11 +48,12 @@ button, input, textarea{color: #fff; border:none;background: none;font-size: 16p
 
 /* MV section style */
 .mv-section .container{width: 100%; height: auto;_position: relative;}
-.mv-section .img-container{position: relative;}
+.mv-section .img-container{position: relative; }
+.mv-section .img-container:hover img{opacity: 0.5;}
 .mv-section .mv-text{position: absolute;width: 100%; left: 50%; top: 50%;transform: translate(-50%, -50%);display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .mv-section a{ color: #FF961C; font-size: 80px;}
 .mv-section em{font-size: 60px; font-weight: 600; transition: all 0.4;}
-.mv-section em:hover{color: #FF961C;}
+
 
 /* Play section style */
 .play-section{width: 100%;display: flex;align-items: center;justify-content: center; flex-direction: column;margin-top: 3rem;}
@@ -76,7 +77,7 @@ button, input, textarea{color: #fff; border:none;background: none;font-size: 16p
 .album-section .img-container{position: relative;}
 .album-section .album-text{position: absolute;width: 100%; top: 50%;transform: translateY(-50%);display: flex; flex-direction: column; justify-content: center; align-items: flex-start;left: 2rem;}
 
-.album-section span{font-size: 20px; color: #FF961C;font-weight: 600}
+.album-section span{font-size: 20px; color: #FF961C;font-weight: 600;}
 .album-section em{font-size: 50px; font-weight: 600;margin:20px 0;}
 .album-section .btn{background: #fff;border: 2px solid #FF961C; cursor: pointer; transition: all .4s;}
 .album-section button{font-size: 16px; color: #FF961C; cursor: pointer;}
@@ -99,13 +100,13 @@ button, input, textarea{color: #fff; border:none;background: none;font-size: 16p
 .scd-section{width: 100%;display: flex;align-items: center;justify-content: center; flex-direction: column;margin-top: 3rem;}
 .scd-section .container{width: 100%; height: auto; margin: 4rem 0;text-align: center;}
 .scd-section .text-box{display: flex; justify-content: center; align-items: center;flex-direction: column;}
-.scd-section .text-box span{font-size: 20px; color: #FF961C;font-weight: 600}
+.scd-section .text-box span{font-size: 20px; color: #FF961C;font-weight: 600;}
 .scd-section .text-box em{font-size: 50px; font-weight: 600;margin-top: 30px;}
 
-.scd-section .scd-boxes{_display: flex; justify-content: center; align-items: center; margin: auto;margin-top: 3rem;flex-wrap: wrap;}
-.scd-section .scd-box{padding: 1rem; margin-bottom: 2rem;width: 430px;display: flex; flex-direction: column; justify-content: center; align-items: start;text-align: start;}
+.scd-section .scd-boxes{margin: auto;margin-top: 3rem;flex-wrap: wrap;}
+.scd-section .scd-box{padding: 1rem; margin-bottom: 2rem;width: 33%;display: flex; flex-direction: column; justify-content: center; align-items: start;text-align: start;}
 
-.scd-section .scd-box img{width: 400px; height: auto; overflow: hidden;display: flex; align-items: center; justify-content: center;}
+.scd-section .scd-box img{width: 95%; height: auto; overflow: hidden;display: flex; align-items: center; justify-content: center;}
 .scd-section .scd-box p{font-size: 20px; font-weight: 600;padding: 1rem 0;}
 .scd-section .scd-box span{color: #fff;font-size: 18px;}
 .scd-section .scd-box i{font-size: 20px;margin-right: .5rem;}
@@ -125,6 +126,7 @@ element.style{display: none;}
 .info-section .info-box{width: 25%;}
 .info-section .info-box h3{font-size: 24px; font-weight: 600; margin-bottom: 1rem;}
 .info-section .info-box li, .info-box p{font-size: 16px; font-weight: 200; width: 250px; line-height: 1.5; margin-bottom: 1rem;}
+.info-section .info-box li:hover{color: #FF961C; font-weight: 400;}
 .info-section .info-box i{font-size: 18px; color: #fff; margin-right: 1rem; }
 .info-section .info-box i:hover{color: #FF961C;}
 .info-box .sns{margin-top: 2rem;}
