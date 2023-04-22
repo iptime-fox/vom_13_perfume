@@ -2,6 +2,7 @@ const header = document.querySelector('header');
 const headerHeight = header.offsetHeight;
 const toTop = document.querySelector('#top');
 const toBottom = document.querySelector('#bottom');
+// console.log(scrollY);
 
 window.addEventListener('scroll', function () {
   const scrY = window.scrollY;
@@ -21,5 +22,5 @@ toTop.addEventListener('click', function () {
 });
 
 toBottom.addEventListener('click', function () {
-  window.scroll(0, 4000);
+  window.scroll(0, 7000);
 });
