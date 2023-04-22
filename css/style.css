@@ -4,7 +4,7 @@
 
 /* header sytle */
 header{width: 100%; height: auto;position: fixed; z-index: 999; _background: black;}
-header .container{display: flex; justify-content: space-between; margin: auto;align-items: center;padding: 1.5rem;}
+header .container{display: flex; justify-content: space-between; margin: auto;align-items: center;padding: 1.5rem 0;}
 header .logo{display: flex;justify-content: center;align-items: center;}
 header .logo .logo-djj{width: 60px;height: auto;}
 header .logo .logo-perfume{width: 150px; height: auto;}
@@ -28,10 +28,10 @@ section .container{width: 100%; max-width: max-content;}
 
 /* Meet section style */
 .meet-section .container{width: 100%; height: auto;  padding: 1rem 2rem;border: none; display: flex; margin: auto; justify-content: center; align-items: center; }
-.meet-section .icon-box{width: 354px;height: 354px; display: flex; flex-direction: column; justify-content: center; align-items: center;background: #1D1D1D;margin: 2rem; margin-top: 4rem;}
+.meet-section .icon-box{width: 354px;height: 354px; display: flex; flex-direction: column; justify-content: center; align-items: center;background: #1D1D1D;margin: 2rem; margin-top: 4rem; transition: all .2s;}
 
 .meet-section .icon-box i{font-size: 60px; cursor: pointer;}
-.meet-section .icon-box i:hover{color: #FF961C;}
+.meet-section .icon-box:hover{color: #FF961C; box-shadow: 0px 8px 24px #FF961C; }
 .meet-section .icon-box span{font-size: 20px; font-weight: 600;line-height: 3;}
 .meet-section .icon-box p{font-size: 16px; font-weight: 600; text-align: center;width: 300px;}
 
@@ -42,7 +42,9 @@ section .container{width: 100%; max-width: max-content;}
 .intro-section em{font-size: 60px; font-weight: 600;margin-top: 30px;}
 .intro-section p{font-size: 16px; font-weight: 400; line-height: 32px;margin-top: 60px;text-align: center;}
 button, input, textarea{color: #fff; border:none;background: none;font-size: 16px;}
-.intro-section .btn{margin-top: 60px;}
+.intro-section .btn{margin-top: 60px; transition: all .4s;}
+.intro-section .btn:hover{background: #FF961C;}
+
 
 /* MV section style */
 .mv-section .container{width: 100%; height: auto;_position: relative;}
@@ -60,10 +62,13 @@ button, input, textarea{color: #fff; border:none;background: none;font-size: 16p
 
 .play-section .song-boxes{display: flex; justify-content: center; align-items: center; margin: auto;margin-top: 3rem;flex-wrap: wrap;}
 .play-section .song-box{padding: 1rem; margin-bottom: 2rem;}
-.play-section .song-box img{width: 430px; height: 430px; overflow: hidden;display: flex; align-items: center; justify-content: center;}
+.play-section .song-box img{width: 430px; height: 430px; overflow: hidden;display: flex; align-items: center; justify-content: center; transition: all .4s;}
+.play-section .song-box img:hover{scale: 1.05;}
+
 .play-section .song-box p{font-size: 20px; font-weight: 600;padding: 1rem 0;}
 .play-section .song-box span{color: #fff;font-size: 18px;}
 .play-section .song-box i{font-size: 20px;margin-left: .5rem;}
+.play-section .song-box i:hover{color: #FF961C;}
 
 /* Album section style */
 .album-section .container{width: 100%; height: auto;}
@@ -72,17 +77,21 @@ button, input, textarea{color: #fff; border:none;background: none;font-size: 16p
 
 .album-section span{font-size: 20px; color: #FF961C;font-weight: 600}
 .album-section em{font-size: 50px; font-weight: 600;margin:20px 0;}
-.album-section .btn{background: #fff;border: 2px solid #FF961C; cursor: pointer;}
+.album-section .btn{background: #fff;border: 2px solid #FF961C; cursor: pointer; transition: all .4s;}
 .album-section button{font-size: 16px; color: #FF961C; cursor: pointer;}
+.album-section .btn:hover{background: #FF961C;}
+.album-section .btn:hover button{color: #fff;}
 
 /* Score section style */
 .score-section .container{width: 100%; height: auto;}
 .score-section .img-container{position: relative;}
 .score-section .score-text-box{position: absolute;width: 100%; top: 50%; left:50%; transform: translate(-50%, -50%);display: flex;justify-content: space-between; align-items: center; padding: 0 15rem; }
-.score-section .score-text{text-align: center;}
+.score-section .score-text{text-align: center; transition: all .4s;}
 .score-section .score-icon i{font-size: 55px;}
 .score-section .score-text span{font-size: 50px; font-weight: 600;}
 .score-section .score-text p{font-size: 20px; font-weight: 400;}
+
+.score-section .score-text:hover{color: #FF961C; scale: 1.1;}
 
 
 /* Schedule section style */

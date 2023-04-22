@@ -1,6 +1,15 @@
+@media screen and (max-width : 2000px) {
+  .img-boxes .img-box{width: 220px; height: 220px;}
+}
+
+@media screen and (max-width : 1600px) {
+  .img-boxes .img-box{width: 200px; height: 200px;}
+}
+
 @media screen and (max-width : 1200px) {
   .nav-lists li{margin-left: 1.5rem;}
   .swiper-button-next:after, .swiper-button-prev:after{ font-size: 1.5rem;}
+  .img-boxes .img-box{width: 140px; height: 140px;}
 }
 
 @media screen and (max-width : 980px) {
@@ -9,6 +18,9 @@
   .nav-lists li:nth-child(7){display: block; }
   header .logo .logo-djj{width: 50px;height: auto;}
   header .logo .logo-perfume{width: 135px; height: auto;}
+  .img-boxes .img-box{width: 120px; height: 120px;}
+
+
   
 }
 
@@ -18,8 +30,10 @@
   .swiper-button-next:after, .swiper-button-prev:after{font-size: 1rem;}
   header .logo .logo-djj{width: 40px;height: auto;}
   header .logo .logo-perfume{width: 120px; height: auto;}
+  .img-boxes .img-box{width: 100px; height: 100px;}
 }
 
 
 @media screen and (max-width : 600px) {
+  .img-boxes .img-box{width: 80px; height: 80px;}
 }
