@@ -31,12 +31,12 @@ section .container{width: 100%; max-width: max-content;}
 .meet-section .icon-box{width: 354px;height: 354px; display: flex; flex-direction: column; justify-content: center; align-items: center;background: #1D1D1D;margin: 2rem; margin-top: 4rem; transition: all .2s;}
 
 .meet-section .icon-box i{font-size: 60px; cursor: pointer;}
-.meet-section .icon-box:hover{color: #FF961C; box-shadow: 0px 8px 24px #FF961C; }
+.meet-section .icon-box:hover{color: #FF961C; box-shadow: 0px 8px 30px #FF961C; }
 .meet-section .icon-box span{font-size: 20px; font-weight: 600;line-height: 3;}
 .meet-section .icon-box p{font-size: 16px; font-weight: 600; text-align: center;width: 300px;}
 
 /* Introduce section style */
-.intro-section{width: 50%;}
+.intro-section{width: 60%;}
 .intro-section .container{width: 100%; height: auto; display: flex; justify-content: center; align-items: center;flex-direction: column;margin: 4rem 0;}
 .intro-section span{font-size: 20px; color: #FF961C;font-weight: 600}
 .intro-section em{font-size: 60px; font-weight: 600;margin-top: 30px;}
