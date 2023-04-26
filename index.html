@@ -36,6 +36,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 
+  <!-- AOS CSS link -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
   <!-- Header -->
@@ -104,7 +107,7 @@
   </section>
 
   <!-- Meet section -->
-  <section class="section meet-section">
+  <section class="section meet-section" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="icon-box">
         <i class="ri-gift-line"></i>
@@ -125,7 +128,7 @@
   </section>
 
   <!-- Intruduce section -->
-  <section class="section intro-section">
+  <section class="section intro-section" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <span>WHO WE ARE</span>
       <em>WE ARE DOJAEJUNG</em>
@@ -137,7 +140,7 @@
   </section>
 
   <!-- Music video section -->
-  <section class="section mv-section">
+  <section class="section mv-section" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="img-container">
         <img src="img/mv.jpeg" alt="mv-img" class="mv-img">
@@ -150,7 +153,7 @@
   </section>
 
   <!-- Play section -->
-  <section class="section play-section">
+  <section class="section play-section" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="text-box">
         <span>NEW ALBUM</span>
@@ -193,7 +196,7 @@
   </section>
 
   <!-- Album section -->
-  <section class="section album-section">
+  <section class="section album-section" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="img-container">
         <img src="img/yellow.png" alt="album-img" class="mv-img">
@@ -209,7 +212,7 @@
   </section>
 
   <!-- Score section -->
-  <section class="section score-section">
+  <section class="section score-section" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="img-container">
         <img src="img/moon.png" alt="mv-img" class="mv-img">
@@ -218,28 +221,28 @@
             <div class="score-icon">
               <i class="ri-team-line"></i>
             </div>
-            <span>900</span>
+            <span class="count-num" data-count="900"></span>
             <p>CONCERTS</p>
           </div>
           <div class="score-text">
             <div class="score-icon">
               <i class="ri-global-line"></i>
             </div>
-            <span>800</span>
+            <span class="count-num" data-count="800"></span>
             <p>GLOBAL FANS</p>
           </div>
           <div class="score-text">
             <div class="score-icon">
               <i class="ri-trophy-line"></i>
             </div>
-            <span>400</span>
+            <span class="count-num" data-count="400"></span>
             <p>MUSIC AWARDS</p>
           </div>
           <div class="score-text">
             <div class="score-icon">
               <i class="ri-file-music-line"></i>
             </div>
-            <span>300</span>
+            <span class="count-num" data-count="300"></span>
             <p>TOTAL SONGS</p>
           </div>
         </div>
@@ -439,6 +442,7 @@
 
   <!-- Script -->
   <script src="js/header.js"></script>
+  <script src="js/custom.js"></script>
   
   <!-- Swiper Slider Link -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -482,5 +486,12 @@
 });
 </script>
 
+<!-- AOS JS link -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200
+  });
+</script>
 </body>
 </html>

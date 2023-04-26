@@ -11,5 +11,19 @@ em, strong, i, b{font-style: normal; font-weight: normal;}
 button, input, textarea{border: 1px solid #555; outline: 0; background: #fff; font-family: 'Open Sans', sans-serif;}
 
 /* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+/* Main Root Style */
+:root{
+
+  /* Color */
+  --color-fs: #211e1f;
+  --color-og: #FF961C
+  /* --el-wide: 2rem;
+  --el-medium: 1.75rem;
+  --el-small: 0.75rem;
+  --el-main: 3rem;
+  --el-cont: 7.5rem;
+ */
+
+}
