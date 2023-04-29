@@ -22,15 +22,14 @@ function countNumber() {
   });
 }
 
-const score = document.querySelector('.score-section');
-const scoreTop = score.offsetTop;
-console.log(scoreTop);
+// const score = document.querySelector('.score-section');
+// const scoreTop = score.offsetTop;
+// console.log(scoreTop);
 
 window.addEventListener('scroll', function () {
-  const pageTop = window.pageYOffset;
+  let pageTop = window.scrollY;
   console.log(pageTop);
-  // if (pageTop > scoreTop) {
-  //   countNumber();
-  //   console.log('hello');
-  // }
+  if (pageTop > 2900) {
+    countNumber();
+  }
 });
