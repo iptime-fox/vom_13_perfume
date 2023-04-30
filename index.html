@@ -58,16 +58,31 @@
       <nav class="nav-wrapper">
         <ul class="nav-lists">
           <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">SONGS</a></li>
-          <li><a href="#">CART</a></li>
+          <li><a href="#">NEW ALBUM</a></li>
           <li><a href="#">COLUMNS</a></li>
           <li><a href="#">CONTACT</a></li>
-          <li><a href="#"><i class="ri-menu-line"></i></a></li>
+          <li><a href="#">CART</a></li>
+          <li class="menu-icon"><a href="#"><i class="ri-menu-line"></i></a></li>
           <li><a href="#"><i class="ri-search-line"></i></a></li>
         </ul>
       </nav>
     </div>
   </header>
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay">
+    <div class="mobile-menus">
+      <nav class="nav-wrapper">
+        <ul class="nav-lists">
+          <li class="close-icon"><a href="#"><i class="ri-close-line"></i></a></li>
+          <li><a href="#"><i class="ri-team-line"></i>ABOUT US</a></li>
+          <li><a href="#"><i class="ri-disc-line"></i>NEW ALBUM</a></li>
+          <li><a href="#"><i class="ri-article-line"></i>COLUMNS</a></li>
+          <li><a href="#"><i class="ri-contacts-book-2-line"></i>CONTACT</a></li>
+          <li><a href="#"><i class="ri-shopping-cart-line"></i>CART</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
   <!-- landing-section -->
   <section class="section landing-section">
@@ -130,8 +145,10 @@
   <!-- Intruduce section -->
   <section class="section intro-section" data-aos="fade-up" data-aos-once="true">
     <div class="container">
-      <span>WHO WE ARE</span>
-      <em>WE ARE DOJAEJUNG</em>
+      <div class="text-box">
+        <span>WHO WE ARE</span>
+        <p>WE ARE DOJAEJUNG</p>
+      </div>
       <P>The Story Of Jazz And Blues Society Is The Story Of Determination, Passion, Idealism, Community, And Of Course, Music. Founded In 1985 And Incorporated In 1986, As A Community Based, Not-For-Profit, Charitable Arts Organization Located In Vancouver, British Columbia, The Society, From The Very Beginning, Has Worked Diligently To Establish Vancouver As A Centre For The Creation And Exchange Of Sounds And Ideas Between The Local, National And International Music Communities.</P>
       <div class="btn">
         <button>READ MORE</button>
@@ -157,36 +174,48 @@
     <div class="container">
       <div class="text-box">
         <span>NEW ALBUM</span>
-        <em>SENSE OUR NEW SONGS</em>
+        <p>SENSE OUR NEW SONGS</p>
       </div>
       <div class="song-boxes">
         <div class="song-box">
-          <img src="./img/pf.jpeg" alt="perfume" class="perfume">
+          <div class="song-img-wrapper">
+            <img src="./img/pf.jpeg" alt="perfume">
+          </div>
           <p>Perfume</p>
           <span>Stream On : </span><i class="ri-spotify-line"></i><i class="ri-youtube-fill"></i><i class="ri-music-2-fill"></i><i class="ri-google-fill"></i><i class="ri-instagram-line"></i>
         </div>
         <div class="song-box">
-          <img src="./img/kiss.png" alt="perfume" class="kiss">
+          <div class="song-img-wrapper">
+            <img src="./img/kiss.png" alt="kiss">
+          </div>
           <p>Kiss</p>
           <span>Stream On : </span><i class="ri-spotify-line"></i><i class="ri-youtube-fill"></i><i class="ri-music-2-fill"></i><i class="ri-google-fill"></i><i class="ri-instagram-line"></i>
         </div>
         <div class="song-box">
-          <img src="./img/dive.png" alt="perfume" class="dive">
+          <div class="song-img-wrapper">
+            <img src="./img/dive.png" alt="dive">
+          </div>
           <p>Dive</p>
           <span>Stream On : </span><i class="ri-spotify-line"></i><i class="ri-youtube-fill"></i><i class="ri-music-2-fill"></i><i class="ri-google-fill"></i><i class="ri-instagram-line"></i>
         </div>
         <div class="song-box">
-          <img src="./img/ss.png" alt="perfume" class="strawberry sunday">
+          <div class="song-img-wrapper">
+            <img src="./img/ss.png" alt="Strawberry sunday">
+          </div>
           <p>Strawberry Sunday</p>
           <span>Stream On : </span><i class="ri-spotify-line"></i><i class="ri-youtube-fill"></i><i class="ri-music-2-fill"></i><i class="ri-google-fill"></i><i class="ri-instagram-line"></i>
         </div>
         <div class="song-box">
-          <img src="./img/canwe.png" alt="perfume" class="can we go back">
+          <div class="song-img-wrapper">
+            <img src="./img/canwe.png" alt="can we go back">
+          </div>
           <p>Can We Go Back</p>
           <span>Stream On : </span><i class="ri-spotify-line"></i><i class="ri-youtube-fill"></i><i class="ri-music-2-fill"></i><i class="ri-google-fill"></i><i class="ri-instagram-line"></i>
         </div>
         <div class="song-box">
-          <img src="./img/ordinary.png" alt="perfume" class="ordinary">
+          <div class="song-img-wrapper">
+            <img src="./img/ordinary.png" alt="ordinary">
+          </div>
           <p>Ordinary</p>
           <span>Stream On : </span><i class="ri-spotify-line"></i><i class="ri-youtube-fill"></i><i class="ri-music-2-fill"></i><i class="ri-google-fill"></i><i class="ri-instagram-line"></i>
         </div>
@@ -255,7 +284,7 @@
     <div class="container">
       <div class="text-box">
         <span>NEW SCHEDULE</span>
-        <em>OUR LATEST ACTIVITIES</em>
+        <p>OUR LATEST ACTIVITIES</p>
       </div>
       <div class="post-slider">
         <div class="scd-boxes slick1">
@@ -426,6 +455,7 @@
   </div>
 
 
+
   <!-- Footer -->
 
   <footer>
@@ -534,5 +564,8 @@
     duration: 1200
   });
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
 </body>
 </html>

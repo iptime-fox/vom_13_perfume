@@ -28,7 +28,7 @@ function countNumber() {
 
 window.addEventListener('scroll', function () {
   let pageTop = window.scrollY;
-  console.log(pageTop);
+  // console.log(pageTop);
   if (pageTop > 2900) {
     countNumber();
   }

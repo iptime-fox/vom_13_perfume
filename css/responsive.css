@@ -23,6 +23,9 @@
 
 @media screen and (max-width : 1200px) {
   /* header */
+  header .nav-lists li{display: none;}
+  header .nav-lists li:nth-child(6){display: block;}
+  header .nav-lists li:nth-child(7){display: block; }
   .nav-lists li{margin-left: 1.5rem;}
   .swiper-button-next:after, .swiper-button-prev:after{ font-size: 1.5rem;}
 
@@ -64,10 +67,11 @@
 }
 
 @media screen and (max-width : 980px) {
+  /* text box */
+  .text-box span{font-size: 16px; }
+  .text-box p{font-size: 40px;}
+
   /* header */
-  .nav-lists li{display: none;}
-  .nav-lists li:nth-child(6){display: block;}
-  .nav-lists li:nth-child(7){display: block; }
   header .logo .logo-djj{width: 50px;height: auto;}
   header .logo .logo-perfume{width: 135px; height: auto;}
 
@@ -78,24 +82,22 @@
   .meet-section .icon-box p{font-size: 14px; font-weight: 400; text-align: center;width: 200px;}
 
   /* introduce section */
-  .intro-section em{font-size: 40px;}
-  .intro-section p{font-size: 14px;}
+  .intro-section .container > p{font-size: 14px;}
 
   /* mv section */
   .mv-section a{font-size: 60px;}
   .mv-section em{font-size: 40px;}
+  
+  /* play section */
+  .play-section .song-box img{width: 250px; height: 250px;}
+  .play-section .song-box p{font-size: 16px; font-weight: 600;}
+  .play-section .song-box span{font-size: 14px;}
+  .play-section .song-box i{font-size: 16px;margin-left: .25rem;}
 
   /* Album section style */
   .album-section span{font-size: 16px; }
   .album-section em{font-size: 40px;}
 
-  /* play section */
-  .play-section span{font-size: 16px;}
-  .play-section em{font-size: 40px;}
-  .play-section .song-box img{width: 250px; height: 250px;}
-  .play-section .song-box p{font-size: 16px; font-weight: 600;}
-  .play-section .song-box span{font-size: 14px;}
-  .play-section .song-box i{font-size: 16px;margin-left: .25rem;}
 
   /* score section */
   .score-section .score-text-box{padding: 0 5rem;}
@@ -104,8 +106,6 @@
   .score-section .score-text p{font-size: 18px; }
 
   /* Schedule section */
-  .scd-section .text-box span{font-size: 16px;}
-  .scd-section .text-box em{font-size: 40px; }
   .scd-section .scd-box{padding: .5rem;}
   .scd-section .scd-box p{font-size: 16px;}
   .scd-section .scd-box span{font-size: 14px;}
@@ -122,6 +122,10 @@
 
 
 @media screen and (max-width : 786px) {
+  /* text box */
+  .text-box span{font-size: 14px; }
+  .text-box p{font-size: 36px;}
+
   /* button */
   .btn{width: 130px; height: 36px; }
   button{font-size: 14px;}
@@ -135,6 +139,10 @@
   .meet-section .icon-box p{display: none;}
   .album-section button{font-size: 14px;}
 
+  /* mv section */
+  .mv-section a{font-size: 50px;}
+  .mv-section em{font-size: 36px;}
+
   /* play section */
   .play-section .song-box img{width: 400px; height: 400px;}
   .play-section .song-box p{font-size: 20px; font-weight: 600;}
@@ -142,6 +150,8 @@
   .play-section .song-box i{font-size: 20px;margin-left: .5rem;}
 
   /* Album section style */
+  .album-section span{font-size: 14px; }
+  .album-section em{font-size: 36px;}
 
 
   /* score section */
