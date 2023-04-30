@@ -73,9 +73,9 @@ button, input, textarea{color: #fff; border:none;background: none;font-size: 16p
 .play-section .song-boxes{display: flex; justify-content: center; align-items: center; margin: auto;margin-top: var(--el-main);flex-wrap: wrap;}
 
 .play-section .song-box{padding: var(--el-small); margin-bottom: var(--el-wide); overflow: hidden;}
-.song-box .song-img-wrapper{overflow: hidden; transition: all .4s ;}
-.play-section .song-box img{width: 360px; height: 360px; display: flex; align-items: center; justify-content: center; transition: all .4s ;  }
-.song-img-wrapper:hover img{transform: scale(1.2);  transition: all .4s;}
+.song-box .song-img-wrapper{overflow: hidden; transition: all .5s linear;}
+.play-section .song-box img{width: 360px; height: 360px; display: flex; align-items: center; justify-content: center; transition: all .5s ;  }
+.song-img-wrapper:hover img{transform: scale(1.2);  transition: all .5s ;}
 
 .play-section .song-box p{font-size: 20px; font-weight: 600;padding: var(--el-small) 0;}
 .play-section .song-box span{color: #fff;font-size: 18px;}
@@ -131,8 +131,11 @@ element.style{display: none;}
 .info-section{width: 100%;margin-top: var(--el-main);padding: 0 var(--el-wide);}
 .info-section .container{display: flex;justify-content: center; }
 .info-section .info-box{width: 25%;}
+
+
 .info-section .info-box h3{font-size: 24px; font-weight: 600; margin-bottom: var(--el-small);}
-.info-section .info-box li, .info-box p{font-size: 16px; font-weight: 200; width: 250px; line-height: 1.5; margin-bottom: var(--el-small);}
+.info-section .info-box h3:hover{color: var(--color-og);}
+.info-section .info-box li, .info-box p{font-size: 16px; font-weight: 200; width: 250px; line-height: 1.5; margin-top: var(--el-small) 0;}
 .info-section .info-box li:hover{color: var(--color-og); font-weight: 400;}
 .info-section .info-box i{font-size: 18px; color: #fff; margin-right: var(--el-small); }
 .info-section .info-box i:hover{color: var(--color-og);}
@@ -145,6 +148,8 @@ element.style{display: none;}
 
 .form input{font-size: 18px; font-weight: 400; color: #666666;}
 
+.info-box .info-title{display: flex; justify-content: space-between; align-items: center;}
+.info-box .info-title i{font-size: 25px; display: none;}
 
 /* Footer style */
 footer{width: 100%;margin-top: 8rem;display: flex; align-items: center; justify-content: center; height: 100px;border-top: 1px solid #444;}
