@@ -11,13 +11,13 @@ header .logo .logo-perfume{width: 150px; height: auto;}
 .nav-lists li:nth-child(6){display: none;font-size: 20px;}
 
 /* Mobile-menu style */
-.mobile-overlay{position: fixed;  right: var(--el-small); background: #fff; z-index: 1000; width: 200px; height: 50%; transition: all 0.8s; opacity: 0; visibility: hidden; border-radius: .25rem;}
+.mobile-overlay{position: fixed;  right: var(--el-small);  z-index: 1000; width: 100%; height: 100vh; transition: all 0.8s; opacity: 0; visibility: hidden; display: flex; justify-content: end;}
 .mobile-overlay.on{opacity: 1; visibility: visible;}
 
-.mobile-menus{margin-top: .5rem;}
+.mobile-menus{margin-top: .5rem;  width: 200px; height: 40%; background: #fff;border-radius: .25rem;}
 .mobile-menus .nav-lists{display: flex;flex-direction: column; justify-content: center; align-items: start; padding-bottom: 1.5rem; }
 
-.mobile-menus .nav-lists li:first-child{ border-bottom: none; display: flex; justify-content: end;margin:0 var(--el-small); align-items: center; height: auto;}
+.mobile-menus .nav-lists li:first-child{ border-bottom: none; display: flex; justify-content: end;margin:0 var(--el-small); align-items: center; height: auto; margin-top: .5rem;}
 .mobile-menus .nav-lists li:nth-child(2){margin-top: 0;}
 .mobile-menus .nav-lists li{width: 85%; margin: var(--el-small); border-bottom: 1px solid #ddd; margin-bottom: .5rem;}
 .mobile-menus .nav-lists a{color: #111; display: flex; align-items: center; column-gap: var(--el-small); padding-bottom: .5rem; font-size: 16px; transition: all .3s;}
@@ -38,7 +38,7 @@ section .container{width: 100%; max-width: max-content;}
 }
 
 /* Meet section style */
-.meet-section .container{width: 100%; height: auto;  padding: var(--el-small) var(--el-wide);border: none; display: flex; margin: auto; justify-content: center; align-items: center; }
+.meet-section .container{width: 100%; height: 100%;  padding: var(--el-small) var(--el-wide);border: none; display: flex; margin: auto; justify-content: center; align-items: center; }
 .meet-section .icon-box{width: 354px;height: 354px; display: flex; flex-direction: column; justify-content: center; align-items: center;background: #1D1D1D;margin: var(--el-wide); margin-top: var(--el-main); transition: all .2s;}
 
 .meet-section .icon-box i{font-size: 60px; cursor: pointer;}
@@ -75,7 +75,7 @@ button, input, textarea{color: #fff; border:none;background: none;font-size: 16p
 .play-section .song-box{padding: var(--el-small); margin-bottom: var(--el-wide); overflow: hidden;}
 .song-box .song-img-wrapper{overflow: hidden; transition: all .5s linear;}
 .play-section .song-box img{width: 360px; height: 360px; display: flex; align-items: center; justify-content: center; transition: all .5s ;  }
-.song-img-wrapper:hover img{transform: scale(1.2);  transition: all .5s ;}
+.song-img-wrapper:hover img{transform: scale(1.1);  transition: all .5s ;}
 
 .play-section .song-box p{font-size: 20px; font-weight: 600;padding: var(--el-small) 0;}
 .play-section .song-box span{color: #fff;font-size: 18px;}
@@ -89,8 +89,9 @@ button, input, textarea{color: #fff; border:none;background: none;font-size: 16p
 
 .album-section span{font-size: 20px; color: var(--color-og);font-weight: 600;}
 .album-section em{font-size: 50px; font-weight: 600;margin:20px 0;}
-.album-section .btn{background: #fff;border: 2px solid var(--color-og); cursor: pointer; transition: all .4s;}
-.album-section button{font-size: 16px; color: var(--color-og); cursor: pointer;}
+.album-section .btn{background: #fff;border: 2px solid var(--color-og); cursor: pointer; transition: all .4s; }
+.album-section .btn a{width: 100%; height: auto;}
+.album-section button{font-size: 16px; color: var(--color-og); cursor: pointer;width: 100%;}
 .album-section .btn:hover{background: var(--color-og);}
 .album-section .btn:hover button{color: #fff;}
 
@@ -124,8 +125,8 @@ element.style{display: none;}
 
 /* Image slider section style */
 .img-boxes{margin-top: var(--el-main);}
-.img-boxes .img-box{width: 180px; height: 180px;}
-.img-boxes .img-box img{width: 100%; overflow: hidden;height: 100%;}
+.img-boxes .img-box{width: 200px; height: 200px; }
+.img-boxes .img-box img{width: 100%;object-fit: cover; height: 100%;}
 
 /* Contact section style */
 .info-section{width: 100%;margin-top: var(--el-main);padding: 0 var(--el-wide);}
