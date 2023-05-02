@@ -115,12 +115,15 @@
   .score-section .score-text p{font-size: 18px; }
 
   /* Schedule section */
-
+  .scd-section .scd-box{padding: .5rem;}
 
   /* img slider */
   .img-boxes .img-box{width: 120px; height: 120px;}
 
 
+  /* contact section */
+  .info-section .info-box h3{font-size: 20px; }
+  .info-section .info-box i{font-size: 16px;}
 }
 
 
@@ -177,6 +180,9 @@
   /* img slider */
   .img-boxes .img-box{width: 100px; height: 100px;}
 
+  /* Contact section */
+  .info-section .info-box h3{font-size: 18px; }
+  .info-section .info-box i{font-size: 14px;}
 }
 
 

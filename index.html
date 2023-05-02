@@ -58,10 +58,10 @@
       </div>
       <nav class="nav-wrapper">
         <ul class="nav-lists">
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">NEW ALBUM</a></li>
+          <li><a href="#intro-section">ABOUT US</a></li>
+          <li><a href="#play-section">NEW ALBUM</a></li>
           <li><a href="#">COLUMNS</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#info-section">CONTACT</a></li>
           <li><a href="#"><i class="ri-shopping-cart-line"></i></a></li>
           <li><a href="#"><i class="ri-user-line"></i></a></li>
           <li class="menu-icon"><a href="#"><i class="ri-menu-line"></i></a></li>
@@ -76,10 +76,10 @@
       <nav class="nav-wrapper">
         <ul class="nav-lists">
           <li class="close-icon"><a href="#"><i class="ri-close-line"></i></a></li>
-          <li><a href="#"><i class="ri-image-line"></i>ABOUT US</a></li>
-          <li><a href="#"><i class="ri-disc-fill"></i>NEW ALBUM</a></li>
+          <li><a href="#meet-section"><i class="ri-image-line"></i>ABOUT US</a></li>
+          <li><a href="#play-section"><i class="ri-disc-fill"></i>NEW ALBUM</a></li>
           <li><a href="#"><i class="ri-article-line"></i>COLUMNS</a></li>
-          <li><a href="#"><i class="ri-phone-fill"></i>CONTACT</a></li>
+          <li><a href="#info-section"><i class="ri-phone-fill"></i>CONTACT</a></li>
           <li><a href="#"><i class="ri-shopping-cart-line"></i>CART</a></li>
           <li><a href="#"><i class="ri-user-line"></i>LOGIN</a></li>
         </ul>
@@ -125,7 +125,7 @@
   </section>
 
   <!-- Meet section -->
-  <section class="section meet-section" data-aos="fade-up" data-aos-once="true">
+  <section class="section meet-section" id="meet-section" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="icon-box">
         <i class="ri-gift-line"></i>
@@ -145,8 +145,8 @@
     </div>
   </section>
 
-  <!-- Intruduce section -->
-  <section class="section intro-section" data-aos="fade-up" data-aos-once="true">
+  <!-- Introduce section -->
+  <section class="section intro-section" id="intro-section" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="text-box">
         <span>WHO WE ARE</span>
@@ -173,7 +173,7 @@
   </section>
 
   <!-- Play section -->
-  <section class="section play-section" data-aos="fade-up" data-aos-once="true">
+  <section class="section play-section" id="play-section" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="text-box">
         <span>NEW ALBUM</span>
@@ -406,7 +406,7 @@
 
 
   <!-- Contact section -->
-  <div class="section info-section">
+  <div class="section info-section" id="info-section">
     <div class="container" id="accordion">
       <div class="info-box">
         <div class="info-title">
@@ -496,11 +496,15 @@
   <!-- Swiper Slider Link -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script>
-    const swiper = new Swiper('.swiper', { loop: true,
-      // Navigation arrows
+    const swiper = new Swiper('.swiper', { 
+      loop: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 35000, // 비디오 길이 추출
+        disableOnInteraction : false,
       }
     });
     </script>
@@ -535,6 +539,8 @@
 });
 
 </script>
+
+
 
 <!-- Image slider slick -->
 <script>

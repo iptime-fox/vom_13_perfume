@@ -22,14 +22,12 @@ function countNumber() {
   });
 }
 
-// const score = document.querySelector('.score-section');
-// const scoreTop = score.offsetTop;
-// console.log(scoreTop);
+const score = document.querySelector('.score-section');
+const scoreTop = score.getBoundingClientRect().top + window.pageYOffset - 800;
 
 window.addEventListener('scroll', function () {
   let pageTop = window.scrollY;
-  // console.log(pageTop);
-  if (pageTop > 2900) {
+  if (pageTop > scoreTop) {
     countNumber();
   }
 });
@@ -49,7 +47,7 @@ accHeaders.forEach((header) => {
 });
 const colseAll = (item) => {
   accHeaders.forEach((header) => {
-    if (header !== item) {
+    if (header !== item || header !== item.nextSibling) {
       header.classList.remove('active');
     }
   });
