@@ -34,10 +34,10 @@ window.addEventListener('scroll', function () {
 
 /* Contact section accordion */
 
-const body = document.querySelector('body');
 const accordion = document.querySelector('#accordion');
 const accHeaders = document.querySelectorAll('.info-box');
 const accContents = document.querySelectorAll('.info-contents');
+const body = document.querySelector('body');
 
 accHeaders.forEach((header) => {
   header.addEventListener('click', () => {
@@ -45,9 +45,17 @@ accHeaders.forEach((header) => {
     header.classList.toggle('active');
   });
 });
+
+accContents.forEach((header) => {
+  header.addEventListener('click', () => {
+    colseAll(header);
+    header.classList.toggle('active');
+  });
+});
+
 const colseAll = (item) => {
   accHeaders.forEach((header) => {
-    if (header !== item || header !== item.nextSibling) {
+    if (header !== item) {
       header.classList.remove('active');
     }
   });
