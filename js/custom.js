@@ -1,4 +1,4 @@
-/* Landing section swiper */
+/***** Landing section swiper *****/
 const swiper = new Swiper('.swiper', {
   loop: true,
   navigation: {
@@ -15,7 +15,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-/* Score section - count number */
+/***** Score section - count number *****/
 function countNumber() {
   $('.count-num').each(function () {
     var $this = $(this),
@@ -49,7 +49,71 @@ window.addEventListener('scroll', function () {
   }
 });
 
-/* Contact section accordion */
+/***** Schedule section slick *****/
+
+$('.slick1').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  prevArrow: false,
+  nextArrow: false,
+  responsive: [
+    {
+      breakpoint: 980,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
+/***** Image slider slick *****/
+
+$('.slick2').slick({
+  infinite: true,
+  slidesToShow: 8,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  prevArrow: false,
+  nextArrow: false,
+  responsive: [
+    {
+      breakpoint: 980,
+      settings: {
+        slidesToShow: 7,
+      },
+    },
+    {
+      breakpoint: 786,
+      settings: {
+        slidesToShow: 6,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 5,
+      },
+    },
+    {
+      breakpoint: 420,
+      settings: {
+        slidesToShow: 4,
+      },
+    },
+  ],
+});
+
+/***** Contact section accordion *****/
 
 const accordion = document.querySelector('#accordion');
 const accHeaders = document.querySelectorAll('.info-box');
@@ -84,4 +148,9 @@ body.addEventListener('click', (e) => {
       header.classList.remove('active');
     });
   }
+});
+
+/* AOS */
+AOS.init({
+  duration: 1200,
 });
