@@ -32,11 +32,32 @@ header .logo .logo-perfume{width: 150px; height: auto;}
 section .container{width: 100%; max-width: max-content;}
 .swiper-button-next:after, .swiper-button-prev:after{color: #fff; font-size: 2rem;}
 
+.swiper-pagination-bullet {
+	width: 0px;
+	height: 4px;
+	border-radius: 0;
+	position: relative;
+	overflow: hidden;
+}
 
-/* @keyframes show-up{
-  0%{transform: translateY(40px); opacity: 0;}
-  100%{transform: translateY(0); opacity: 1;}
-} */
+.swiper-pagination-bullet-active {
+background: var(--color-og);
+animation: slide-progress 37s forwards;
+position: absolute;
+left: 0;
+bottom: 0;
+}
+
+@keyframes slide-progress {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
 
 /* Meet section style */
 .meet-section .container{width: 100%; height: 100%;  padding: var(--el-small) var(--el-wide);border: none; display: flex; margin: auto; justify-content: center; align-items: center; }
@@ -59,12 +80,14 @@ button, input, textarea{color: #fff; border:none;background: none;font-size: 16p
 
 /* MV section style */
 .mv-section .container{width: 100%; height: auto;}
-.mv-section .img-container{position: relative; }
-.mv-section .img-container:hover img{opacity: 0.5;}
-.mv-section .mv-text{position: absolute;width: 100%; left: 50%; top: 50%;transform: translate(-50%, -50%);display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.mv-section .img-container{position: relative; transition: all .5s;}
+
+.mv-section .mv-text{position: absolute;width: 100%; left: 50%; top: 50%;transform: translate(-50%, -50%);display: flex; flex-direction: column; justify-content: center; align-items: center;height: 100%;}
 .mv-section a{ color: var(--color-og); font-size: 80px;}
 .mv-section em{font-size: 60px; font-weight: 600; transition: all 0.4;}
 
+.mv-section .img-container:hover .mv-text{background: rgba(255, 255, 255, .5);}
+.mv-section .img-container:hover .mv-text em{color: #333;}
 
 /* Play section style */
 .play-section{width: 100%;display: flex;align-items: center;justify-content: center; flex-direction: column;margin-top: var(--el-main);}

@@ -1,3 +1,20 @@
+/* Landing section swiper */
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 35000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
 /* Score section - count number */
 function countNumber() {
   $('.count-num').each(function () {

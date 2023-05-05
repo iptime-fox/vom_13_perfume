@@ -120,6 +120,8 @@
       <div class="swiper-button-prev slider-btn"></div>
       <div class="swiper-button-next slider-btn"></div>
 
+      <!-- Add Pagination -->
+      <div class="swiper-pagination">
       
     </div>
   </section>
@@ -283,7 +285,7 @@
   </section>
 
   <!-- Schedule section -->
-  <section class="section scd-section">
+  <section class="section scd-section" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="text-box">
         <span>NEW SCHEDULE</span>
@@ -489,27 +491,11 @@
     <button><i class="ri-arrow-down-s-line"></i></button>
   </div>
 
-  <!-- Script -->
-  <script src="js/header.js"></script>
-  <script src="js/custom.js"></script>
-  
+
   <!-- Swiper Slider Link -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.swiper', { 
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      autoplay: {
-        delay: 35000, // 비디오 길이 추출
-        disableOnInteraction : false,
-      }
-    });
-    </script>
 
-<!-- Slick link -->
+
 
 <!-- Schedule section slick -->
 <script>
@@ -590,7 +576,9 @@
   });
 </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+  <!-- Script -->
+  <script src="js/header.js"></script>
+  <script src="js/custom.js"></script>
+  
 </body>
 </html>
