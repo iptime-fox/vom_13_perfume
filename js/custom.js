@@ -1,12 +1,12 @@
 /***** Landing section swiper *****/
-const swiper = new Swiper('.swiper', {
+const landswiper = new Swiper('.landing-section .swiper', {
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
   autoplay: {
-    delay: 35000,
+    delay: 34500,
     disableOnInteraction: false,
   },
   pagination: {
@@ -49,35 +49,36 @@ window.addEventListener('scroll', function () {
   }
 });
 
-/***** Schedule section slick *****/
-
-$('.slick1').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
+/***** Schedule section swiper *****/
+const scdSwiper = new Swiper('.scd-section .swiper', {
+  loop: true,
   autoplay: true,
   autoplaySpeed: 2000,
-  prevArrow: false,
-  nextArrow: false,
-  responsive: [
-    {
-      breakpoint: 980,
-      settings: {
-        slidesToShow: 2,
-      },
+  slidesPerView: 3,
+  spaceBetween: 15,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 0,
     },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-      },
+    700: {
+      slidesPerView: 2,
+      spaceBetween: 5,
     },
-  ],
+    950: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  },
 });
 
 /***** Image slider slick *****/
 
-$('.slick2').slick({
+$('.slick').slick({
   infinite: true,
   slidesToShow: 8,
   slidesToScroll: 1,

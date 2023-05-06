@@ -18,6 +18,8 @@
   .info-box .btn{width: 130px; height: 36px; }
   .info-box button{font-size: 14px;}
 
+  /* scd-section */
+  .scd-section .slider-nav-wrapper{display: none;}
   /* img slider */
   .img-boxes .img-box{width: 150px; height: 150px;}
   
@@ -205,9 +207,5 @@
   .meet-section .icon-box{width: 400px; height: 150px;}
   .meet-section .icon-box p{width: 300px;}
 
-  /* schedule section */
-  .scd-section .scd-box p{font-size: 20px; font-weight: 600;padding: var(--el-small) 0;}
-  .scd-section .scd-box span{font-size: 18px;}
-  .scd-section .scd-box i{font-size: 20px;}
-  .scd-section .scd-box em{font-size: 20px;}
+
 }
