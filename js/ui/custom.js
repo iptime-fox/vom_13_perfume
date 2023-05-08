@@ -6,7 +6,7 @@ const landswiper = new Swiper('.landing-section .swiper', {
     prevEl: '.swiper-button-prev',
   },
   autoplay: {
-    delay: 34500,
+    delay: 35000,
     disableOnInteraction: false,
   },
   pagination: {
