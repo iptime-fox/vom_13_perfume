@@ -155,3 +155,12 @@ body.addEventListener('click', (e) => {
 AOS.init({
   duration: 1200,
 });
+
+/* preloader */
+$(function () {
+  $('.js-preloader').preloadinator({
+    minTime: 1500,
+    animation: 'fadeOut',
+    animationDuration: 400,
+  });
+});
