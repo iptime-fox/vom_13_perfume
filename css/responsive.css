@@ -176,9 +176,9 @@
 
   /* score section */
   .score-section .score-text-box{padding: 0 var(--el-wide);}
-  .score-section .score-icon i{font-size: 35px;}
-  .score-section .score-text span{font-size: 30px; }
-  .score-section .score-text p{font-size: 16px; }
+  .score-section .score-text{display: flex; align-items: center; justify-content: space-between; column-gap: var(--el-small); width: 60%; }
+  .score-section .score-text p{width: 140px; text-align: start;}
+  .score-section .score-text-box{flex-direction: column; row-gap: var(--el-wide);}
 
   /* schedule section */
   .scd-section .scd-box p{font-size: 14px;}
@@ -207,5 +207,9 @@
   .meet-section .icon-box{width: 400px; height: 150px;}
   .meet-section .icon-box p{width: 300px;}
 
+  /* score section */
+  .score-section .score-text{width: 80%;}
+
+  
 
 }

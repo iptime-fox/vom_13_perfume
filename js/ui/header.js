@@ -3,6 +3,7 @@ setTimeout(() => {
   const header = document.querySelector('header');
   const headerHeight = header.offsetHeight;
   const toTop = document.querySelector('#top');
+  const toBottomBg = document.querySelector('.bottom-btn');
   const toBottom = document.querySelector('#bottom');
   // console.log(scrollY);
 
@@ -11,9 +12,11 @@ setTimeout(() => {
     if (scrY > headerHeight) {
       header.style.background = 'black';
       toTop.style.display = 'flex';
+      toBottomBg.style.background = 'black';
     } else {
       header.style.background = 'none';
       toTop.style.display = 'none';
+      toBottomBg.style.background = 'none';
     }
   });
 
@@ -56,4 +59,4 @@ setTimeout(() => {
   });
 
   mobileOverlay.style.top = headerHeight + 'px';
-}, 300);
+}, 400);

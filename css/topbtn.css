@@ -1,0 +1,7 @@
+/* top btn */
+.arrowBtn{transition: all 0.1s;}
+.arrowBtn button{border: 2px solid #fff; background: black; font-size: 20px; width: 35px;height: 35px; display: flex; align-items: center; justify-content: center; position: fixed; bottom: 40px; right: 40px;font-weight: 600; color: #fff; z-index: 10000; cursor: pointer;}
+.arrowBtn i{padding: .25rem;}
+#top button{bottom: 80px;}
+
+.arrowBtn button:hover{color: var(--color-og); border: 2px solid var(--color-og);}

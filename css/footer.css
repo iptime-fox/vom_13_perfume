@@ -1,3 +1,28 @@
+/* Contact section style */
+.info-section{width: 100%;margin-top: var(--el-main);padding: 0 var(--el-wide);}
+.info-section .container{display: flex;justify-content: center; }
+.info-section .info-box{width: 25%; transition: all .4s;}
+
+
+.info-section .info-box h3{font-size: 24px; font-weight: 600; margin-bottom: var(--el-small);}
+.info-section .info-box h3:hover{color: var(--color-og);}
+.info-section .info-box li, .info-box p{font-size: 16px; font-weight: 200; width: 250px; line-height: 1.5; margin-top: var(--el-small) 0;}
+.info-section .info-box li:hover{color: var(--color-og); font-weight: 400;}
+.info-section .info-box i{font-size: 18px; color: #fff; margin-right: var(--el-small); }
+.info-section .info-box i:hover{color: var(--color-og);}
+.info-box .sns{margin-top: var(--el-wide);}
+
+.info-box .btn{border: 2px solid var(--color-og); cursor: pointer;font-size: 16px; font-weight: 600; transition: all .4s;}
+.info-box .btn:hover{background:var(--color-og); color: #fff;}
+.form .email{border: 1px solid #666666; width: 300px; height: 50px;margin-bottom: var(--el-small);padding: var(--el-small);}
+.form .message{border: 1px solid #666666; width: 300px; height: 170px; padding: var(--el-small); margin-bottom: var(--el-small);}
+
+.form input{font-size: 18px; font-weight: 400; color: #666666;}
+
+.info-box .info-title{display: flex; justify-content: space-between; align-items: center;}
+.info-box .info-title i{font-size: 25px; display: none;}
+
+
 /* Footer style */
 footer{width: 100%;margin-top: 8rem;display: flex; align-items: center; justify-content: center; height: 100px;border-top: 1px solid #444;}
 footer h4{color: #fff; font-size: 16px; font-weight: 200;opacity: .8;cursor: pointer;}

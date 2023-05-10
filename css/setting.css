@@ -12,7 +12,7 @@ ol, ul{list-style: none;}
 a{text-decoration: none; color: #444;}
 img{display: block; width: 100%; overflow: hidden;}
 em, strong, i, b{font-style: normal; font-weight: normal;}
-button, input, textarea{border: 1px solid #555; outline: 0; background: #fff; font-family: 'Open Sans', sans-serif;}
+button, input, textarea{border:none; outline: 0; background: none; font-family: 'Open Sans', sans-serif;color: #fff; font-size: 16px;}
 
 /* Main Root Style */
 :root{

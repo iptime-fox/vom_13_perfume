@@ -10,7 +10,14 @@ if (pageURL.includes('index')) {
 }
 
 /* ----- Custom CSS Files -----  */
-const cssFileNames = ['setting', 'style', 'header', 'footer', 'responsive'];
+const cssFileNames = [
+  'setting',
+  'topbtn',
+  'header',
+  'footer',
+  `${pageName}`,
+  'responsive',
+];
 
 for (let i = 0; i < cssFileNames.length; i++) {
   const cssFile = document.createElement('link');
