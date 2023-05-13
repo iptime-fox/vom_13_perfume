@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCT DJJ || 로그인</title>
+
+  <!-- Favicon Link -->
+  <link rel="shortcut icon" href="/perfume/img/logo.png">
+  <link rel="apple-touch-icon" href="/perfume/img/logo.png">
+
+  <!-- Font link -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+
+  <!-- Remix Icon Link -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- AOS CSS link -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="wrapper sign">
+
+  <!-- Header -->
+  <div id="header-wrapper"></div>
+  
+  <!-- Mobile Menu -->
+  <div id="mobile-overlay-wrapper"></div>
+
+  <!-- Sign Form section -->
+  <section class="sign-form section">
+    <div class="container">
+      <div class="title-wrapper">
+        <h2>SIGN IN</h2>
+      </div>
+
+      <div class="form-wrapper">
+        <!-- <div class="form-video">
+          <video loop autoplay muted><source src="/perfume/img/sign.mp4"></video>
+        
+        </div> -->
+        
+        <div class="form">
+          <h3>LOGIN your account</h3>
+          <form onsubmit="return false;" id="signupForm">
+            <p><input type="text" placeholder="ID"></p>
+            <p><input type="password" placeholder="Password"></p>
+            <p class="sign-msg">
+              <em>Already have an account? : </em>
+              <a href="/perfume/pages/sign-up.html">SIGN UP</a>
+            </p>
+            <ul>
+              <li onclick="kakaoLogin();">
+                  <a href="javascript:void(0)">
+                      <img src="/perfume/img/kakao_login_medium_wide.png" alt="">
+                  </a>
+              </li>
+              <li onclick="kakaoLogout();">
+                  <a href="javascript:void(0)">
+                      <span>카카오 로그아웃</span>
+                  </a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Footer -->
+  <div id="footer-wrapper"></div>
+
+  <!-- To top button -->
+  <div id="top" class="arrowBtn">
+    <button><i class="ri-arrow-up-s-line"></i></button>
+  </div>
+  <div id="bottom" class="arrowBtn">
+    <button class="bottom-btn"><i class="ri-arrow-down-s-line"></i></button>
+  </div>
+</div>
+
+
+
+
+  <!-- Script -->
+  <script src="/perfume/js/etc/jquery.preloadinator.min.js"></script>
+  <script src="/perfume/js/etc/head-contents.js"></script>
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script src="/perfume/js/ui/sign-in.js"></script>
+</body>
+</html>
