@@ -63,6 +63,10 @@ if (isSwiper.length > 0) {
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
+      10: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
       480: {
         slidesPerView: 1,
         spaceBetween: 0,

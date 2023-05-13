@@ -155,6 +155,7 @@
   .meet-section .container{flex-direction: column;}
   .meet-section .icon-box{width: 500px; height: 200px;}
   .meet-section .icon-box p{width: 450px;}
+  
 
   /* Introduce section */
   .intro-section .container>p{display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-break: keep-all; overflow: hidden; }
@@ -199,17 +200,79 @@
 }
 
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 520px) {
+  /* text box */
+  .text-box span{font-size: 14px; }
+  .text-box p{font-size: 30px; text-align: center; margin-top: 25px;}
+  
+
+  /* button */
+  .btn, .info-box .btn{width: 100px; height: 30px; }
+  button, .album-section button, .info-box button{font-size: 12px;}
+
   /* img slider */
   .img-boxes .img-box{width: 80px; height: 80px;}
 
   /* meet section */
   .meet-section .icon-box{width: 400px; height: 150px;}
   .meet-section .icon-box p{width: 300px;}
+  .meet-section .icon-box i{font-size: 30px;}
+  .meet-section .icon-box span{font-size: 16px; font-weight: 400;}
+  
+  /* intro section */
+  .intro-section .container>p{margin-top: 25px;}
+  .intro-section .btn{margin-top: 25px;}
 
   /* score section */
   .score-section .score-text{width: 80%;}
 
-  
+  /* play section */
+  .play-section .song-boxes{margin: var(--el-wide) 0;}
+
+}
+
+@media screen and (max-width : 430px) {
+  /* Mobile-menu */
+  .mobile-menus{margin-top: .25rem;  width: 200px;}
+  .mobile-menus .nav-lists{padding-bottom: 1rem; }
+
+  .mobile-menus .nav-lists li:first-child{ margin:0 var(--el-small); align-items: center; height: auto; margin-top: .25rem;}
+  .mobile-menus .nav-lists li{margin-bottom: .25rem;}
+  .mobile-menus .nav-lists a{font-size: 14px;}
+  .mobile-menus .nav-lists a i{font-size: 16px; }
+
+   /* meet section */
+   .meet-section .container{padding: .25rem .5rem;}
+   .meet-section .icon-box{width: 300px; height: 120px;}
+   .meet-section .icon-box p{width: 250px;}
+   .meet-section .icon-box i{font-size: 25px;}
+  .meet-section .icon-box span{font-size: 14px;}
+
+   /* mv section */
+   .mv-section a{font-size: 45px;}
+   .mv-section em{font-size: 32px;}
+
+   /* play section */
+   .play-section .song-box img{width: 280px; height: 280px; overflow: hidden; }
+   .play-section .song-box p{font-size: 16px; font-weight: 400;}
+   .play-section .song-box span{font-size: 12px;}
+   .play-section .song-box i{font-size: 16px;margin-left: .25rem;}
+
+   /* score section */
+  .score-section .score-text-box{padding: 0 var(--el-small);}
+  .score-section .score-text{column-gap: .5rem; width: 80%; }
+  .score-section .score-text i{font-size: 35px;}
+  .score-section .score-text p{width: 120px; text-align: start; font-size: 14px;}
+  .score-section .score-text span{font-size: 30px;}
+
+   /* Contact section */
+   .info-section .info-box h3{font-size: 16px; }
+   .info-section .info-box i{font-size: 12px;}
+   .info-section .info-box li, .info-box p{font-size: 12px;}
+   .info-section .info-box .sns i{font-size: 14px;}
+   .form .email{width: 200px; height: 30px;}
+   .form .message{width: 200px; height: 100px;}
+   .form input{font-size: 12px;}
+   .form .email, .form .message{padding: 0.25rem;}
 
 }

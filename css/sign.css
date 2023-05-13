@@ -4,7 +4,7 @@
 .sign .title-wrapper{display: flex; align-items: center; justify-content: center; padding: var(--el-wide); }
 .sign .title-wrapper h2{font-size: 3rem; font-weight: 600; }
 
-.sign .form-wrapper{display: flex; width: 30%;align-items: center; margin: var(--el-wide) auto;justify-content: center; height: 60%; background: #ffffff; border-radius: 1.5rem;}
+.sign .form-wrapper{display: flex; width: 30%;align-items: center; margin: var(--el-wide) auto;justify-content: center; height: 60%; background: #ffffff; border-radius: .5rem;}
 /* .sign .form-wrapper .form-video{width: 60%; height: 60%; object-fit: cover;}
 .sign .form-video video{width: 100%; height: 100%; border-radius: 1.5rem 0 0 1.5rem; overflow: hidden; object-fit: cover;} */
 
@@ -13,7 +13,7 @@
 
 .sign .form-wrapper form{display: flex; flex-direction: column; row-gap: .5rem; padding: var(--el-small); }
 .sign .form-wrapper form p{width: 100%; height: auto;}
-.sign .form-wrapper form input{width: 100%; height: auto; padding: 1rem 1.5rem; font-size: 1rem; background: #f5f5f5; border-radius: 1.5rem;}
+.sign .form-wrapper form input{width: 100%; height: auto; padding: 1rem 1.5rem; font-size: 1rem; background: #f5f5f5; border-radius: .5rem;}
 .sign .form-wrapper form input[type="submit"]{background: var(--color-og); color: #fff; font-size: 1.25rem; font-weight: 500; transition: all .4s; border: 1px solid var(--color-og);}
 .sign .form-wrapper form input[type="submit"]:hover{color: var(--color-og); background: #fff; }
 .sign .form-wrapper form input:focus{border: 1px solid var(--color-og); background: #fff; }
@@ -21,5 +21,5 @@
 
 .sign .form-wrapper form .sign-msg{display: flex; justify-content: end; align-items: center;column-gap: .5rem;}
 .sign .form-wrapper form .sign-msg em{color: #999;}
-.sign .form-wrapper form .sign-msg a{padding: .75rem var(--el-small); background: var(--color-og); border-radius: 1.5rem; color: #fff; transition: all .4s; border: 1px solid var(--color-og);}
+.sign .form-wrapper form .sign-msg a{padding: .75rem var(--el-small); background: var(--color-og); border-radius: .5rem; color: #fff; transition: all .4s; border: 1px solid var(--color-og);}
 .sign .form-wrapper form .sign-msg a:hover{ background: #fff; color: var(--color-og);}
