@@ -1,4 +1,5 @@
 *{transition: none;}
+html {  overflow-y: scroll !important; }
 .sign .sign-form{margin-top: 7rem; }
 .sign .info-section{margin-top: 6.25rem}
 .sign .title-wrapper{display: flex; align-items: center; justify-content: center; padding: var(--el-wide); }

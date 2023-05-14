@@ -77,6 +77,9 @@
 
   /* Footer */
   footer{height: 90px;}
+
+  /* sign */
+  .sign .form-wrapper{width: 40%;}
 }
 
 @media screen and (max-width : 980px) {
@@ -133,6 +136,9 @@
   /* Footer */
   footer{margin-top: 6rem; height: 80px;}
   footer h4{font-size: 14px;}
+
+  /* sign */
+  .sign .form-wrapper{width: 50%;}
 }
 
 
@@ -197,6 +203,9 @@
   /* Footer */
   footer{margin-top: var(--el-main); height: 70px;}
   footer h4{font-size: 12px;}
+
+  /* sign */
+  .sign .form-wrapper{width: 60%;}
 }
 
 
@@ -228,6 +237,9 @@
 
   /* play section */
   .play-section .song-boxes{margin: var(--el-wide) 0;}
+
+  /* sign */
+  .sign .form-wrapper{width: 70%;}
 
 }
 
@@ -275,4 +287,6 @@
    .form input{font-size: 12px;}
    .form .email, .form .message{padding: 0.25rem;}
 
+   /* sign */
+  .sign .form-wrapper{width: 80%;}
 }

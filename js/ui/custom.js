@@ -17,6 +17,11 @@ if (isSwiper.length > 0) {
     },
   });
 
+  /* AOS */
+  AOS.init({
+    duration: 1200,
+  });
+
   /***** Score section - count number *****/
   function countNumber() {
     $('.count-num').each(function () {
@@ -157,11 +162,6 @@ setTimeout(() => {
     }
   });
 }, 200);
-
-/* AOS */
-AOS.init({
-  duration: 1200,
-});
 
 /* preloader */
 $(function () {
