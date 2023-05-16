@@ -27,10 +27,6 @@ for (let i = 0; i < cssFileNames.length; i++) {
 }
 
 /* ----- Custom JS Files -----  */
-const include = document.createElement('script');
-include.type = 'text/javascript';
-include.src = `/perfume/js/etc/include.js?_v=${versionUpdate}`;
-document.body.insertAdjacentElement('beforeend', include);
 
 const jsFileNames = ['custom', 'header'];
 
@@ -39,4 +35,9 @@ for (let i = 0; i < jsFileNames.length; i++) {
   jsFile.type = 'text/javascript';
   jsFile.src = `/perfume/js/ui/${jsFileNames[i]}.js?_v=${versionUpdate}`;
   document.body.insertAdjacentElement('beforeend', jsFile);
+
+  const include = document.createElement('script');
+  include.type = 'text/javascript';
+  include.src = `/perfume/js/etc/include.js?_v=${versionUpdate}`;
+  document.body.insertAdjacentElement('beforeend', include);
 }

@@ -5,7 +5,6 @@ setTimeout(() => {
   const toTop = document.querySelector('#top');
   const toBottomBg = document.querySelector('.bottom-btn');
   const toBottom = document.querySelector('#bottom');
-  // console.log(scrollY);
 
   window.addEventListener('scroll', function () {
     const scrY = window.scrollY;
@@ -27,7 +26,7 @@ setTimeout(() => {
   });
 
   toBottom.addEventListener('click', function () {
-    window.scroll(0, 7000);
+    window.scroll(0, 9000);
   });
 
   /* MOBILE MENU */

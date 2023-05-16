@@ -87,6 +87,53 @@ if (isSwiper.length > 0) {
     },
   });
 
+  /***** Contact section accordion *****/
+  setTimeout(() => {
+    const accordion = document.querySelector('#accordion');
+    const accHeaders = document.querySelectorAll('.info-box');
+    const accContents = document.querySelectorAll('.info-contents');
+    const body = document.querySelector('body');
+
+    accHeaders.forEach((header) => {
+      header.addEventListener('click', () => {
+        colseAll(header);
+        header.classList.toggle('active');
+      });
+    });
+
+    accContents.forEach((header) => {
+      header.addEventListener('click', () => {
+        colseAll(header);
+        header.classList.toggle('active');
+      });
+    });
+
+    const colseAll = (item) => {
+      accHeaders.forEach((header) => {
+        if (header !== item) {
+          header.classList.remove('active');
+        }
+      });
+    };
+
+    body.addEventListener('click', (e) => {
+      if (!accordion.contains(e.target)) {
+        accHeaders.forEach((header) => {
+          header.classList.remove('active');
+        });
+      }
+    });
+  }, 200);
+
+  /* preloader */
+  // $(function () {
+  //   $('.js-preloader').preloadinator({
+  //     minTime: 1000,
+  //     animation: 'fadeOut',
+  //     animationDuration: 400,
+  //   });
+  // });
+
   /***** Image slider slick *****/
 
   $('.slick').slick({
@@ -125,49 +172,3 @@ if (isSwiper.length > 0) {
     ],
   });
 }
-/***** Contact section accordion *****/
-setTimeout(() => {
-  const accordion = document.querySelector('#accordion');
-  const accHeaders = document.querySelectorAll('.info-box');
-  const accContents = document.querySelectorAll('.info-contents');
-  const body = document.querySelector('body');
-
-  accHeaders.forEach((header) => {
-    header.addEventListener('click', () => {
-      colseAll(header);
-      header.classList.toggle('active');
-    });
-  });
-
-  accContents.forEach((header) => {
-    header.addEventListener('click', () => {
-      colseAll(header);
-      header.classList.toggle('active');
-    });
-  });
-
-  const colseAll = (item) => {
-    accHeaders.forEach((header) => {
-      if (header !== item) {
-        header.classList.remove('active');
-      }
-    });
-  };
-
-  body.addEventListener('click', (e) => {
-    if (!accordion.contains(e.target)) {
-      accHeaders.forEach((header) => {
-        header.classList.remove('active');
-      });
-    }
-  });
-}, 200);
-
-/* preloader */
-$(function () {
-  $('.js-preloader').preloadinator({
-    minTime: 1000,
-    animation: 'fadeOut',
-    animationDuration: 400,
-  });
-});
