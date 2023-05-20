@@ -33,11 +33,13 @@ const jsFileNames = ['custom', 'header'];
 for (let i = 0; i < jsFileNames.length; i++) {
   const jsFile = document.createElement('script');
   jsFile.type = 'text/javascript';
+  jsFile.async = true;
   jsFile.src = `/perfume/js/ui/${jsFileNames[i]}.js?_v=${versionUpdate}`;
   document.body.insertAdjacentElement('beforeend', jsFile);
-
-  const include = document.createElement('script');
-  include.type = 'text/javascript';
-  include.src = `/perfume/js/etc/include.js?_v=${versionUpdate}`;
-  document.body.insertAdjacentElement('beforeend', include);
 }
+
+const include = document.createElement('script');
+include.type = 'text/javascript';
+include.async = true;
+include.src = `/perfume/js/etc/include.js?_v=${versionUpdate}`;
+document.body.insertAdjacentElement('beforeend', include);
