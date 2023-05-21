@@ -205,7 +205,8 @@
   footer h4{font-size: 12px;}
 
   /* sign */
-  .sign .form-wrapper{width: 60%;}
+  .sign .form-wrapper{width: 60%; margin: var(--el-small) auto;}
+  .sign .title-wrapper{padding: var(--el-small);}
 }
 
 
