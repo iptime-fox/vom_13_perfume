@@ -164,10 +164,10 @@ setTimeout(() => {
 }, 400);
 
 /* preloader */
-// $(function () {
-//   $('.js-preloader').preloadinator({
-//     minTime: 1000,
-//     animation: 'fadeOut',
-//     animationDuration: 400,
-//   });
-// });
+$(function () {
+  $('.js-preloader').preloadinator({
+    minTime: 1000,
+    animation: 'fadeOut',
+    animationDuration: 400,
+  });
+});

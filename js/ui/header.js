@@ -60,68 +60,7 @@ setTimeout(() => {
   mobileOverlay.style.top = headerHeight + 'px';
 
   // ======== 카카오 로그인 ========//
-
-  // if (loginBtn !== null) {
-  //   loginBtn.addEventListener('click', function () {
-  //     kakaoLogin();
-  //   });
-  // }
-
-  // if (logoutBtn !== null) {
-  //   logoutBtn.addEventListener('click', function () {
-  //     kakaoLogout();
-  //   });
-  // }
-
-  // window.Kakao.init('916b880c45aa564a38d3b67110580f07');
-
-  // function kakaoLogin() {
-  //   window.Kakao.Auth.login({
-  //     scope: 'profile_nickname, account_email',
-  //     success: function (authObject) {
-  //       console.log(authObject);
-  //       window.Kakao.API.request({
-  //         url: '/v2/user/me',
-  //         success: (response) => {
-  //           const kkAccount = response.kakao_account;
-  //           location.href = '/perfume/index.html';
-  //         },
-  //       });
-  //     },
-  //   });
-  // }
-
-  // if (window.localStorage.getItem('kakao_c901544241a83cd2b303fefa0c095b34')) {
-  //   console.log('abc');
-  //   const logBtn = document.querySelector('.log-btn');
-  //   logBtn.innerHTML = `<a href="#" class="logout"><i class="ri-logout-box-r-line"></i></a>`;
-  //   kakaoLogout();
-  // } else {
-  //   const logBtn = document.querySelector('.log-btn');
-  //   logBtn.innerHTML = `<a href="/perfume/pages/sign-in.html" class="login"><i class="ri-user-line"></i></a>`;
-  //   kakaoLogin();
-  // }
-
-  // logoutBtn.addEventListener('click', function () {});
-  window.Kakao.init('916b880c45aa564a38d3b67110580f07');
-
-  // function kakaoLogin() {
-  //   window.Kakao.Auth.login({
-  //     scope: 'profile_nickname, account_email',
-  //     success: function (authObject) {
-  //       console.log(authObject);
-  //       window.Kakao.API.request({
-  //         url: '/v2/user/me',
-  //         success: (response) => {
-  //           const kkAccount = response.kakao_account;
-  //           console.log(kkAccount);
-  //           console.log(Kakao.Auth.getAccessToken());
-  //           location.href = '/perfume/index.html';
-  //         },
-  //       });
-  //     },
-  //   });
-  // }
+  window.Kakao.init('9be88cae11b6c8765224eb6cc50e7b56');
 
   // 카카오로그아웃;
   function kakaoLogout() {
@@ -129,7 +68,6 @@ setTimeout(() => {
       Kakao.API.request({
         url: '/v1/user/unlink',
         success: function (response) {
-          // console.log(response);
           alert('로그아웃 되었습니다.');
           location.reload();
         },
@@ -141,8 +79,6 @@ setTimeout(() => {
     }
   }
 
-  // console.log(Kakao.Auth.getAccessToken());
-
   if (Kakao.Auth.getAccessToken()) {
     const logBtn = document.querySelector('.log-btn');
 
@@ -150,7 +86,7 @@ setTimeout(() => {
   } else if (!Kakao.Auth.getAccessToken()) {
     const logBtn = document.querySelector('.log-btn');
 
-    logBtn.innerHTML = `<a href="/perfume/pages/sign-in.html" class="login"><i class="ri-user-line"></i></a>`;
+    logBtn.innerHTML = `<a href="/perfume/pages/sign-in.html" class="login"><img src="/perfume/img/login_kakao.png"></a>`;
   }
 
   const logoutBtn = document.querySelector('.logout');
@@ -159,13 +95,4 @@ setTimeout(() => {
       kakaoLogout();
     });
   }
-
-  // const loginBtn = document.querySelector('.login');
-  // console.log(loginBtn);
-
-  // loginBtn.addEventListener('click', function (e) {
-  //   e.preventDefault();
-  //   console.log('abc');
-  //   kakaoLogin();
-  // });
 }, 1500);

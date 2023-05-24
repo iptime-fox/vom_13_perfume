@@ -7,6 +7,6 @@
 .arrowBtn button:hover{color: var(--color-og); border: 2px solid var(--color-og);}
 
 @media screen and (max-width : 430px) {
-  .arrowBtn button{bottom: 20px; right: 20px; font-size: 15px; width: 30px; height: 30px; border: 1px solid #fff; }
-  #top button{bottom: 55px;}
+  .arrowBtn button{bottom: 30px; right: 20px; }
+  #top button{bottom: 70px;}
 }

@@ -25,3 +25,5 @@ header .logo .logo-perfume{width: 150px; height: auto;}
 .mobile-menus .nav-lists a i{font-size: 20px; }
 
 .mobile-menus .nav-lists a:hover{color: var(--color-og);}
+.mobile-menus .nav-lists .mb-login{margin-top: 0;}
+.mobile-menus .mb-login img{width: 80px; }
