@@ -405,12 +405,25 @@
 <!-- Script -->
 
 <script>
-  const url = document.location.href;
-  if(url === 'https://hanara123.cafe24.com/perfume/'){
-    location.href = 'https://hanara123.cafe24.com/perfume/index.html'
-  }
+  const urlPath = document.location.href;
+  window.onload = (event)=>{
+      
+      const userAgent = navigator.userAgent.toLowerCase();
+      let protocolName = '';
+      if(userAgent.indexOf('chrome') > -1){
+        protocolName = 'https';
+      } else {
+        protocolName = 'http';
+      } 
+
+      if(urlPath === 'hanara123.cafe24.com/perfume/'){
+        location.href = `${protocolName}://hanara123.cafe24.com/perfume/index.html`;
+      }else if(urlPath === `${protocolName}://hanara123.cafe24.com/perfume/`){
+        location.href = `${protocolName}://hanara123.cafe24.com/perfume/index.html`;
+      }
+    };
   
-  </script>
+</script>
     
     <!-- jQuery CDN Link -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
