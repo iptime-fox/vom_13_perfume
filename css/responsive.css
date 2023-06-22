@@ -32,8 +32,8 @@
 
   /* header */
   header .nav-lists li{display: none;}
+  header .nav-lists li:nth-child(6){display: block;}
   header .nav-lists li:nth-child(7){display: block;}
-  header .nav-lists li:nth-child(8){display: block;}
   .nav-lists li{margin-left: var(--el-medium);}
   .swiper-button-next:after, .swiper-button-prev:after{ font-size: var(--el-medium);}
 
