@@ -406,22 +406,24 @@
 
 <script>
   const urlPath = document.location.href;
-  window.onload = (event)=>{
+  // window.onload = (event)=>{
       
-      const userAgent = navigator.userAgent.toLowerCase();
-      let protocolName = '';
-      if(userAgent.indexOf('chrome') > -1){
-        protocolName = 'https';
-      } else {
-        protocolName = 'http';
-      } 
+  //     const userAgent = navigator.userAgent.toLowerCase();
+  //     let protocolName = '';
+  //     if(userAgent.indexOf('chrome') > -1){
+  //       protocolName = 'https';
+  //     } else {
+  //       protocolName = 'http';
+  //     } 
 
       if(urlPath === 'hanara123.cafe24.com/perfume/'){
-        location.href = `${protocolName}://hanara123.cafe24.com/perfume/index.html`;
-      }else if(urlPath === `${protocolName}://hanara123.cafe24.com/perfume/`){
-        location.href = `${protocolName}://hanara123.cafe24.com/perfume/index.html`;
+        location.href = `https://hanara123.cafe24.com/perfume/index.html`;
+      }else if(urlPath === `https://hanara123.cafe24.com/perfume/`){
+        location.href = `https://hanara123.cafe24.com/perfume/index.html`;
+      } else if(urlPath === `http://hanara123.cafe24.com/perfume/`){
+        location.href = `http://hanara123.cafe24.com/perfume/index.html`;
       }
-    };
+    // };
   
 </script>
     
